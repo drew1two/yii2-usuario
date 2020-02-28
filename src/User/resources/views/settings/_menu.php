@@ -9,7 +9,7 @@
  * the LICENSE file that was distributed with this source code.
  */
 
-use yii\helpers\Html;
+use yii\bootstrap4\Html;
 use Da\User\Widget\MenuWidget.php
 
 /** @var \Da\User\Model\User $user */
