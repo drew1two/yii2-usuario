@@ -1,3 +1,5 @@
+This is an attempt to integrate pde159/yii2-usario bs4 changes into the latest currently available version of 2amigos/yii2-usario.
+
 Yii 2 Usuario Extension
 =======================
 
