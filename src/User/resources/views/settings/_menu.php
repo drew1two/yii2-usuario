@@ -10,7 +10,7 @@
  */
 
 use yii\helpers\Html;
-use yii\widgets\Menu;
+use Da\User\Widget\MenuWidget.php
 
 /** @var \Da\User\Model\User $user */
 $user = Yii::$app->user->identity;
@@ -33,11 +33,8 @@ $networksVisible = count(Yii::$app->authClientCollection->clients) > 0;
         </h3>
     </div>
     <div class="panel-body">
-        <?= Menu::widget(
+        <?= MenuWidget::widget(
             [
-                'options' => [
-                    'class' => 'nav nav-pills nav-stacked',
-                ],
                 'items' => [
                     ['label' => Yii::t('usuario', 'Profile'), 'url' => ['/user/settings/profile']],
                     ['label' => Yii::t('usuario', 'Account'), 'url' => ['/user/settings/account']],
