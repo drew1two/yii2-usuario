@@ -44,16 +44,13 @@ use yii\bootstrap4\ActiveForm;
 
 <?= Html::activeHiddenInput($model, 'user_id') ?>
 
-<?= $form->field($model, 'items')->widget(
-    SelectizeDropDownList::class,
-    [
-        'items' => $availableItems,
-        'options' => [
-            'id' => 'children',
-            'multiple' => true,
-        ],
-    ]
-) ?>
+<?= $form->field($model, 'items')->widget(Select2::class, [
+    'data' => $availableItems,
+    'options' => [
+        'id' => 'children',
+        'multiple' => true,
+    ],
+]) ?>
 
 <?= Html::submitButton(Yii::t('usuario', 'Update assignments'), ['class' => 'btn btn-success btn-block']) ?>
 
